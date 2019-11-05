@@ -20,10 +20,13 @@ Route::get('/', function () {
     //    'title'=>'testtitle',
     //    'content'=>'testcontent',]);
 
-    $post = new \App\Post();
-    $post->title = 'test title2';
-    $post->content = 'test content2';
-    $post->save();
+    //$post = new \App\Post();
+    //$post->title = 'test title2';
+    //$post->content = 'test content2';
+    //$post->save();
+
+    $posts = \App\Post::all();
+    dd($posts);
 });
 //Route::get('posts', ['as' => 'posts.index',   'uses' => 'PostsController@index']);
 //Route::get('post',  ['as' => 'posts.show',    'uses' => 'PostsController@show']);
