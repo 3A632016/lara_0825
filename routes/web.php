@@ -12,7 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('index');
+    //return view('index');
+    return view('post');
 });
 Route::get('posts', ['as' => 'posts.index',   'uses' => 'PostsController@index']);
 Route::get('post',  ['as' => 'posts.show',    'uses' => 'PostsController@show']);
