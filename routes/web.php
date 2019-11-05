@@ -14,7 +14,11 @@
 Route::get('/', function () {
     //return view('index');
     //return view('post');
-    return view('welcome');
+    //return view('welcome');
+
+    \App\Post::create([
+        'title'=>'testtitle',
+        'content'=>'testcontent',]);
 });
 Route::get('posts', ['as' => 'posts.index',   'uses' => 'PostsController@index']);
 Route::get('post',  ['as' => 'posts.show',    'uses' => 'PostsController@show']);
