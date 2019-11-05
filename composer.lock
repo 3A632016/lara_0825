@@ -700,10 +700,12 @@
             },
             "require-dev": {
                 "phpspec/phpspec": "^3.4",
+                "doctrine/dbal": "~2.5",
                 "phpunit/phpunit": "^5.7.10"
             },
             "suggest": {
                 "ext-fileinfo": "Required for MimeType",
+                "doctrine/dbal": "Required to rename columns and drop SQLite columns (~2.5).",
                 "ext-ftp": "Allows you to use FTP server storage",
                 "ext-openssl": "Allows you to use FTPS server storage",
                 "league/flysystem-aws-s3-v2": "Allows you to use S3 storage with AWS SDK v2",
