@@ -59,7 +59,7 @@ Route::get('/', function () {
 
     //    $post = \App\Post::find(4);
     //    dd($post);
-    
+
     $lastPost = \App\Post::orderBy('id', 'DESC')->first();
     dd($lastPost);
 
